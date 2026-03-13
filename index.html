@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kynetik | Smart Canine Toy Design</title>
+  <style>
+    :root {
+      --indigo: #1c254c;
+      --yellow: #eeed4d;
+      --cream: #fffdf3;
+      --text: #1f2430;
+      --muted: #5f6675;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f8f9ff 0%, #fffef7 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: var(--indigo);
+      color: white;
+      padding: 56px 20px 44px;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--indigo);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      max-width: 700px;
+      margin: 16px auto 0;
+      font-size: 1.08rem;
+      color: #e8ebff;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: -24px auto 0;
+      padding: 0 20px 48px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 10px 24px rgba(16, 24, 40, 0.08);
+      border: 1px solid rgba(28, 37, 76, 0.08);
+    }
+
+    h2 {
+      color: var(--indigo);
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.35rem;
+    }
+
+    h3 {
+      color: var(--indigo);
+      margin: 0 0 10px 0;
+      font-size: 1.05rem;
+    }
+
+    p { margin: 0 0 10px 0; }
+
+    .muted { color: var(--muted); }
+
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, rgba(238, 237, 77, 0.22), rgba(238, 237, 77, 0.08));
+      border-left: 6px solid var(--yellow);
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 18px 20px 36px;
+      font-size: 0.95rem;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .team div {
+      background: #f7f8ff;
+      border-radius: 14px;
+      padding: 14px;
+      border: 1px solid rgba(28, 37, 76, 0.08);
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 10px;
+      background: var(--indigo);
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="badge">Student Project | Tecnológico de Monterrey</div>
+      <h1>Kynetik</h1>
+      <p class="subtitle">
+        A concept brand focused on safer, smarter, and more engaging dog toys through design, engineering, and canine-centered innovation.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <article class="card highlight">
+        <h2>Who we are</h2>
+        <p>
+          Kynetik is a student-developed concept created to rethink dog toys in a more complete way.
+          Instead of seeing a toy only as entertainment, we see it as a product that can support
+          <strong>dental health, safety, durability, and cognitive stimulation</strong> at the same time.
+        </p>
+        <p class="muted">
+          Our project was developed as part of an engineering and design challenge, combining market research, mathematical modeling, and product proposal development.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Our mission</h2>
+        <p>
+          To design dog toys that are not only fun, but also safer for chewing, more durable in daily use,
+          and more stimulating for dogs over time.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Our vision</h2>
+        <p>
+          To become a brand that connects engineering, responsible materials, and animal wellbeing in products that truly improve the experience of both dogs and their owners.
+        </p>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What makes Kynetik different</h2>
+        <ul>
+          <li>Focus on safer chewing and lower dental risk</li>
+          <li>Design backed by research and user survey analysis</li>
+          <li>Mathematical modeling in MATLAB to optimize geometry</li>
+          <li>Interest in sustainable and dog-safe materials</li>
+          <li>Product ideas that combine play with mental stimulation</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>About our product concept</h2>
+        <p>
+          Our current concept is a chew toy with a balanced geometry designed to distribute force better during play.
+          It was developed after analyzing dog owner surveys, studying toy safety problems, and testing design ideas through interpolation and 3D modeling.
+        </p>
+        <p>
+          The goal is simple: create a toy that is more thoughtful than what is usually found in the market.
+        </p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Our team</h2>
+      <p class="muted">Team 4 — Challenge Stage 4</p>
+      <div class="team">
+        <div><strong>Santiago Loya Cruz</strong><br>Design and modeling</div>
+        <div><strong>Rebeca Esquivel Ruiz</strong><br>Testing and analysis</div>
+        <div><strong>Natalia Salas Maldonado</strong><br>Product vision and concept</div>
+        <div><strong>Regina Ramírez Villarreal</strong><br>Development and data support</div>
+        <div><strong>Fátima Isabella Ibáñez Hernández</strong><br>Project coordination and innovation</div>
+      </div>
+    </section>
+
+    <section class="grid" style="margin-top: 20px;">
+      <article class="card">
+        <h2>Why this page exists</h2>
+        <p>
+          This page was created as a quick presentation space linked through a QR code on our business card,
+          so professors and visitors can understand the idea behind Kynetik in a simple way.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Contact / project follow-up</h2>
+        <p>
+          Thank you for taking the time to learn about our project.
+          We are excited to continue improving Kynetik in future development stages.
+        </p>
+        <a class="cta" href="#top" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;">Back to top</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Kynetik — Designed for Them. Built for Life.
+  </footer>
+</body>
+</html>
